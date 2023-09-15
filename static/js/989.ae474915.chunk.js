@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksignup=self.webpackChunksignup||[]).push([[989],{989:function(e,n,s){s.r(n);s(2791);var t=s(184);n.default=function(){return(0,t.jsx)("div",{children:(0,t.jsx)("h3",{className:"text-center mt-5",children:"subject page"})})}}}]);
+//# sourceMappingURL=989.ae474915.chunk.js.map
