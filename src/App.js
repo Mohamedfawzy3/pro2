@@ -1,5 +1,5 @@
 import { lazy ,Suspense} from 'react';
-import{BrowserRouter , Routes , Route} from'react-router-dom'
+import{BrowserRouter , Routes , Route , HashRouter} from'react-router-dom'
 import './App.css';
 // import Signup from './components/signup.jsx'
 // import Login from './components/login.jsx'
@@ -12,7 +12,7 @@ function App() {
    <Suspense fallback={<div className='w-100 h-100 text-center mt-1'> <div className="spinner-border" role="status">
     <span className="visually-hidden">Loading...</span>
   </div></div>}>
-   <BrowserRouter>
+   <HashRouter>
    <Routes>
    {
     ["Signup","/"].map((path,index)=>(
@@ -22,7 +22,7 @@ function App() {
 <Route path='login' element={<Login/>}></Route>
 <Route path='subject' element={<Subject/>}></Route>
    </Routes>
-   </BrowserRouter>
+   </HashRouter>
    </Suspense>
 
 </>
